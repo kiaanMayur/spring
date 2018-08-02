@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestAddition" project="Test Assignment" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="co.in.capgemini.test.TestAddition" time="0.0">
+    <testcase name="testNegativeAddition" classname="co.in.capgemini.test.TestAddition" time="0.0"/>
+    <testcase name="testPositiveAndNegativeAddition" classname="co.in.capgemini.test.TestAddition" time="0.0"/>
+    <testcase name="testPositiveAddition" classname="co.in.capgemini.test.TestAddition" time="0.0"/>
+    <testcase name="testZeroAddition" classname="co.in.capgemini.test.TestAddition" time="0.0"/>
+  </testsuite>
+</testrun>

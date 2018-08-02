@@ -1,0 +1,41 @@
+package in.co.capgemini;
+
+import java.util.Scanner;
+
+class InvalidInputException extends Exception {
+	
+	public InvalidInputException(String message) {
+		super(message);
+	}
+}
+public class Factorial {
+	
+	public int getFactorial(int number) throws InvalidInputException {
+		
+		if(number < 2)
+			throw new InvalidInputException("Invalid Input, input should be greater than 2.");
+		
+		else
+			return number * getFactorial(number - 1);
+		
+	}
+	
+	public static void main(String args[]) {
+		
+		Factorial factorial = new Factorial();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Ener hte number: ");
+		int number = scanner.nextInt();
+		int answer;
+		
+		try {
+			answer = factorial.getFactorial(number);
+		} catch (InvalidInputException e) {
+			//handle exception
+			e.printStackTrace();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

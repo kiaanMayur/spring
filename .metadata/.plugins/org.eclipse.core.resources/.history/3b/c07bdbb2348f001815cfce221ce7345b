@@ -1,0 +1,59 @@
+
+public abstract class Shape { // Abstract class
+	public abstract void draw(); // Abstract method
+}
+
+class Circle extends Shape { //class Circle inherits class Shape
+	
+	private int radius;
+	
+	public Circle(int radius) {
+
+		this.radius = radius;
+		
+	}
+	
+	//overriding method
+	@Override
+	public void draw() {
+		
+		System.out.println("drawing a circle of radius " + radius);
+		
+	}
+}
+
+class Polygon extends Shape { //class Polygon inherits class Shape
+	
+	private int totalSides;
+	
+	public Polygon(int totalSides) {
+		this.totalSides = totalSides;
+	}
+	
+	//overriding method
+	@Override
+	public void draw() {
+		
+		System.out.println("A polygon with sides " + totalSides);
+		
+	}
+}
+
+class Rectangle extends Shape { //class Rectangle inherits class Shape
+	
+	private int length;
+	private int breadth;
+	
+	public Rectangle(int length, int breadth) {
+		this.length = length;
+		this.breadth = breadth;
+		
+	}
+	
+	@Override
+	public void draw() {
+		
+		System.out.println("A rectangle with sides " + length + " " + breadth);
+		
+	}
+}

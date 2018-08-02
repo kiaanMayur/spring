@@ -1,0 +1,23 @@
+package co.in.capgemini.test;
+import org.junit.Assert;
+import org.junit.Test;
+
+import co.in.capgemini.calculator.Maths;
+
+public class TestDivision {
+
+	@Test
+	public void testBothPositve() {
+		Maths math = new Maths();
+		double result = math.divide(4, 2);
+		Assert.assertEquals(2, result, 0);
+	}
+	
+	@Test
+	public void testBothNegative() {
+		Maths math = new Maths();
+		double result = math.divide(-4, -2);
+		Assert.assertEquals(2, result, 0);
+	}
+
+}

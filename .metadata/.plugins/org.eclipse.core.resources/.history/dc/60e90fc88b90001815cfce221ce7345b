@@ -1,0 +1,28 @@
+// demo class to test the game(interface), Football(class)
+//Tennis(class) and cricket(class)
+
+public class Demo implements Game{
+	
+	public void play() {
+		
+	}
+	
+	public void perform(Game game) {
+		game.play();
+	}
+
+	public static void main(String[] args) {
+		
+		Demo demo = new Demo();
+		Game cricket = new Cricket();
+		demo.perform(cricket);
+		
+		Game tennis = new Tennis();
+		demo.perform(tennis);
+		
+		Game football = new Football();
+		demo.perform(football);
+
+	}
+
+}

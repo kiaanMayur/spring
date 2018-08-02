@@ -1,0 +1,15 @@
+package com.capgemini.streamtest.randomnumbers;
+
+public class TestRandomNumbers {
+
+	public static void main(String[] args) {
+
+		GenerateRandomNumbers random = new GenerateRandomNumbers();
+		int[] randomNumbers = random.genrateNumbers();
+		
+		for(int i : randomNumbers)
+			System.out.println(i + " ");
+
+	}
+
+}

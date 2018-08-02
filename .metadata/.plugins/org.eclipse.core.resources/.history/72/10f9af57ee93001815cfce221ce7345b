@@ -1,0 +1,12 @@
+package com.capgemini.testio;
+
+import java.io.File;
+
+public class NewLineCount {
+	
+	public static void main(String[] args) {
+		
+		File file = new File("P:\\Users\\matripat\\Documents\\Advance Collection Assignment\\Temp.txt");
+	}
+
+}

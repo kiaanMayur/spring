@@ -1,0 +1,13 @@
+package com.capgemini.advancecollection;
+
+import java.util.*;
+
+public class BankAccountList {
+	
+	public static void main(String[] args) {
+		
+		Set<SavingsAccount> savings = new TreeSet<>();
+		
+	}
+
+}

@@ -1,0 +1,54 @@
+package com.capgemini.advancecollection;
+
+import java.util.*;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+
+//class to implement the test cases for class MovieDetails
+public class MovieDetailsList {
+	
+	Set<MovieDetails> movie = new LinkedHashSet<>();
+	Iterator<MovieDetails> itr = movie.iterator();
+
+
+	
+	public void addMovie(MovieDetails movieName) {
+		movie.add(movieName);
+		System.out.println(movieName.getMovieName() + " added");
+	}
+	
+	public void removeMovie(String movieName) {
+		Predicate<MovieDetails> deleteMovie = MovieDetails -> MovieDetails.getMovieName().equals(movieName);
+			boolean result = movie.stream().anyMatch(deleteMovie);
+			if(result == true)
+				Consumer<MovieDetails> del = MovieDetails -> movie.remove(MovieDetails);
+				
+	
+	}
+	
+	public void removeAll() {
+		movie.clear();
+		System.out.println("All movies are gone.");
+	}
+	
+	//method to find the movie by name
+	public boolean findByName(String movieName) {
+		
+		Predicate<MovieDetails> checkMovieByName = MovieDetails -> (MovieDetails.getMovieName().equals(movieName));
+		return movie.stream().anyMatch(checkMovieByName);
+	}
+	
+	//method to find movie by genre
+	public boolean findByGenre(String genre) {
+		Predicate<MovieDetails> checkMovieByGenre = MovieDetails -> (MovieDetails.getMovieName().equals(genre));
+		return movie.stream().anyMatch(checkMovieByGenre);
+	}
+
+	
+	public void display() {
+		
+		Consumer<MovieDetails> disp = MovieDetails -> System.out.println(MovieDetails);
+		movie.stream().forEach(disp);
+	}
+
+}

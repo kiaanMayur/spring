@@ -1,0 +1,22 @@
+
+public class Check {
+	public int publiC;
+	private int privatE;
+	protected int protecteD;
+	
+	
+	public int getPrivatE() {
+		return privatE;
+	}
+
+
+	public void setPrivatE(int privatE) {
+		this.privatE = privatE;
+	}
+
+
+	public void disp() {
+		System.out.println(publiC + " " + privatE + " " + protecteD);
+	}
+}
+

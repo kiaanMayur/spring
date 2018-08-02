@@ -1,0 +1,30 @@
+package com.capgemini.advancecollection;
+
+import java.util.*;
+
+//class to implement the test cases for class MovieDetails
+public class MovieDetailsList {
+	
+	public void addMovie(MovieDetails movieName) {
+		Set<MovieDetails> movie = new LinkedHashSet<>();
+		movie.add(movieName);
+	}
+	
+	public void removeMovie(MovieDetails movieName) {
+		movie.remove(movieName);
+	}
+	
+	public void removeAll(MovieDetails movie) {
+		
+	}
+	
+	public void findByName(String movie) {
+		
+	}
+	
+	public void findByGenre(String genre) {
+		
+	}
+
+
+}

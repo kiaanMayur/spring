@@ -1,0 +1,10 @@
+package com.capgemini.streamtest.randomnumbers;
+
+public class TestRandomNumbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

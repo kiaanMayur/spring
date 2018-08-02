@@ -1,0 +1,62 @@
+package in.co.capgemini;
+
+import java.util.Scanner;
+
+class InvalidInputException extends Exception {
+	
+	public InvalidInputException(String message) {
+		super(message);
+	}
+}
+
+class FactorialExceedException extends Exception {
+	
+	public FactorialExceedException(String message) {
+		super(message);
+	}
+}
+public class Factorial {
+	
+	public int getFactorial(int number) throws InvalidInputException, FactorialExceedException{
+		
+		int i, factorial = 1;
+		
+		if(number < 2)
+			throw new InvalidInputException("Invalid input, number should be greater than 2.");
+		
+		else {
+			
+			for(i = 1; i <= number; i++) {
+				factorial *= i;
+				if(factorial > Integer.MAX_VALUE)
+					throw new FactorialExceedException("Values Exceeds the integer value");
+			}
+			
+			
+		}
+		return factorial;
+		
+	}
+	
+	public static void main(String args[]) {
+		
+		Factorial factorial = new Factorial();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		int number = scanner.nextInt();
+		int answer;
+		try {
+			answer = factorial.getFactorial(number);
+			System.out.println("The factorial of " + number + " is " + answer);
+		} catch(InvalidInputException invalidInput) {
+			invalidInput.printStackTrace();
+		} catch (FactorialExceedException fact) {
+			fact.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}

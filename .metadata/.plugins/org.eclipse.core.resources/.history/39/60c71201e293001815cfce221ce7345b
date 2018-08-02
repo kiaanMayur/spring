@@ -1,0 +1,42 @@
+package com.capgemini.advancecollection;
+
+import java.util.*;
+
+//class to implement the test cases for class MovieDetails
+public class MoviesDetailsList {
+	
+	public void addMovie(MovieDetails movie) {
+		movie = new MovieDetails();
+	}
+	
+	public void removeMovie(MovieDetails movie) {
+		
+	}
+	
+	public void removeAll(MovieDetails movie) {
+		
+	}
+	
+	public void findByName(String movie) {
+		
+	}
+	
+	public void findByGenre(String genre) {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		//intialising object of this class
+		MoviesDetailsList movies = new MoviesDetailsList();
+		
+		//initialising a linkedlist
+		List<MovieDetails> movieDetails = new LinkedList<>();
+		
+		//Adding the value
+		movieDetails.add(new MovieDetails("Dangal", "Aamir", "young girl", "Biopic"));
+		
+	}
+
+}

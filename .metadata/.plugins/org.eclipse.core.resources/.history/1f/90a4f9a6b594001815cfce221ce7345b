@@ -1,0 +1,39 @@
+package com.capgemini.advancecollection;
+
+public class TestMovieDetails {
+	
+	public static void main(String[] args) {
+		MovieDetailsList details = new MovieDetailsList();
+		
+		
+		details.addMovie(new MovieDetails("Dangal", "Aamir", "A girl", "biopic"));
+		details.addMovie(new MovieDetails("K3G", "SRK", "PZ", "romance"));
+		details.addMovie(new MovieDetails("koi mil gya", "Hritik", "PZ", "drama"));
+		details.addMovie(new MovieDetails("bahubali", "Prabhas", "A Woman", "action"));
+		
+		//details.removeMovie();
+		
+		//details.removeAll();
+		
+//		details.findByName("Dangal");
+//		details.findByGenre("drama");
+		
+		boolean checkByName = details.findByName("Dangl");
+		if(checkByName)
+			System.out.println("Movie found");
+		else
+			System.out.println("Not found.");
+		
+		boolean checkByGenre = details.findByGenre("biopic");
+		if(checkByGenre)
+			System.out.println("Movie found");
+		else
+			System.out.println("Not found.");
+		
+		details.removeMovie("Dangal");
+		
+		//details.removeAll();
+		details.display();
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.capgemini.advancecollection.carparking;
+
+public class TestParking {
+
+	public static void main(String[] args) {
+		
+		ParkedCarOwnerList list = new ParkedCarOwnerList();
+		
+		ParkedCarOwnerDetails car = new ParkedCarOwnerDetails("Mayur", "520d", "DL3C3121", 7289865, "NDLS");
+		ParkedCarOwnerDetails cheapCar = new ParkedCarOwnerDetails("Mayur", "520d", "DL3C3121", 7289865, "NDLS");
+		ParkedCarOwnerDetails normalCar = new ParkedCarOwnerDetails("Mayur", "520d", "DL3C3121", 7289865, "NDLS");
+		ParkedCarOwnerDetails oldCar = new ParkedCarOwnerDetails("Mayur", "520d", "DL3C3121", 7289865, "NDLS");
+
+		list.addNewCar(car);
+		list.addNewCar(Newcar);
+		
+	}
+
+}

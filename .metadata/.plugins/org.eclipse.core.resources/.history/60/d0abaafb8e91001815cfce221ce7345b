@@ -1,0 +1,14 @@
+package com.capgemini.testcollection;
+
+import com.capgemini.collectionclass.Car;
+import com.capgemini.collectionclass.Laptop;
+
+public class TestCollection {
+	
+	Laptop hp = new Laptop("HP", "ab219tx", "Windows 10", "intel i5");
+	Laptop dell = new Laptop("Dell", "5000s", "Linux", "intel i3");
+	Laptop lenovo = new Laptop("Lenovo", "yoga", "Ubuntu", "intel i7");
+	
+	Car bmw = new Car(11, "520d", 2015, 27_80_000);
+
+}

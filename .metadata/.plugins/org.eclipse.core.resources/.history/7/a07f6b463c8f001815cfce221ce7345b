@@ -1,0 +1,11 @@
+
+public class ParentChildTest {
+
+	public static void main(String[] args) {
+		
+		CHild child = new CHild(10,20);
+		child.disp();
+
+	}
+
+}

@@ -1,0 +1,15 @@
+
+public class CHild extends PArent {
+	
+	private int j;
+	
+	public CHild(int i, int j) {
+		super(i);
+		this.j = j;
+	}
+	
+	public void disp() {
+		System.out.println(j);
+	}
+
+}

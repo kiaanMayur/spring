@@ -1,0 +1,25 @@
+import java.time.LocalDate;
+
+public class Person { 
+	
+	private String name;
+	private Date dob = new Date();
+	public Person(String name, int day, int month, int year) {
+		
+		this.name = name;
+		dob.
+	}
+	
+	public void display() {
+		
+		System.out.println("Name: " + name + "\nDate of Birth: " + dob);
+	}
+	
+	public void olderOne(Person person) {
+		
+		LocalDate current = LocalDate.now();
+		LocalDate previous = LocalDate.of(dob.getYear(), dob.getMonth(), dob.getDay());
+	}
+	
+
+}

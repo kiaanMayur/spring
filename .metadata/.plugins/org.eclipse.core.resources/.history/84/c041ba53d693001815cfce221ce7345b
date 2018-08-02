@@ -1,0 +1,13 @@
+package com.capgemini.advancecollection;
+
+import java.util.Comparator;
+
+public class BankAccountList implements Comparator<SavingsAccount> {
+
+	@Override
+	public int compare(SavingsAccount arg0, SavingsAccount arg1) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.capgemini;
+
+public class Laptop {
+	
+	private String model;
+	private String company;
+	private String operatingSystem;
+	private String processor;
+	
+	
+
+}

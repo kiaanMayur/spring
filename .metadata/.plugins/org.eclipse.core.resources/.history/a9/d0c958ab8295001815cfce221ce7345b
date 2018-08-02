@@ -1,0 +1,13 @@
+package com.capgemini.streamtest;
+
+import java.util.function.Predicate;
+
+public class OddPrimePallindrome {
+	
+	public void isOdd(int a) {
+		
+		Predicate<Integer> checkOdd = (Integer) -> a % 2 == 0;
+		return Integer.stream
+	}
+
+}

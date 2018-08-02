@@ -1,0 +1,23 @@
+class Parent {
+	
+	public Parent() {
+		System.out.println("Parent created");
+	}
+	
+}
+
+class Child extends Parent {
+	
+	public Child() {
+		System.out.println("Child created");
+	}
+}
+public class SingleLevel {
+	
+	public static void main(String args[]) {
+		
+		Child child = new Child();
+		
+	}
+
+}

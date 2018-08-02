@@ -1,0 +1,29 @@
+package com.capgemini.advancecollection;
+
+import java.util.*;
+
+//class to implement the test cases for class MovieDetails
+public class MovieDetailsArrayList {
+	
+	public void addMovie(MovieDetails movie) {
+		movie = new MovieDetails();
+	}
+	
+	public void removeMovie(MovieDetails movie) {
+		
+	}
+	
+	public void removeAll(MovieDetails movie) {
+		
+	}
+	
+	public void findByName(String movie) {
+		
+	}
+	
+	public void findByGenre(String genre) {
+		
+	}
+
+
+}

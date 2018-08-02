@@ -1,0 +1,52 @@
+package com.capgemini.advancecollection;
+
+import java.util.*;
+
+//class to implement the test cases for class MovieDetails
+public class MovieDetailsList {
+	
+	Set<MovieDetails> movie = new LinkedHashSet<>();
+	Iterator<MovieDetails> itr = movie.iterator();
+
+
+	
+	public void addMovie(MovieDetails movieName) {
+		movie.add(movieName);
+		System.out.println("\nadded");
+	}
+	
+	public void removeMovie(MovieDetails movieName) {
+		movie.remove(movieName);
+		System.out.println(movieName + " deleted");
+	}
+	
+	public void removeAll() {
+		movie.clear();
+		System.out.println("All movies are gone.");
+	}
+	
+	public void findByName(String movieName) {
+		
+		while(itr.hasNext()) {
+			if(movieName.equals(movie.contains(movieName))) {
+				System.out.println("found\n" + movie);
+			}
+			else {
+				System.out.println("Not found");
+			}
+		}
+	}
+	
+	public void findByGenre(String genre) {
+		while(itr.hasNext()) {
+			if(genre.equals(movie.contains(genre))) {
+				System.out.println("found\n" + movie);
+			}
+			else {
+				System.out.println("Not found");
+			}
+		}
+	}
+
+
+}
