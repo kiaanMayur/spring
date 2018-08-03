@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestMultiplication" project="Test Assignment" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="co.in.capgemini.test.TestMultiplication" time="0.015">
-    <testcase name="testOneNegativeOnePostive" classname="co.in.capgemini.test.TestMultiplication" time="0.0"/>
-    <testcase name="testBothPositive" classname="co.in.capgemini.test.TestMultiplication" time="0.0"/>
-    <testcase name="testBothNegative" classname="co.in.capgemini.test.TestMultiplication" time="0.015"/>
-  </testsuite>
-</testrun>

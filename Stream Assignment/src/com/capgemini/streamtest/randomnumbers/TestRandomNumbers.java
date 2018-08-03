@@ -54,7 +54,7 @@ public class TestRandomNumbers {
 		BufferedWriter writeAnotherFile = new BufferedWriter(new FileWriter(file2));
 		
 		for(int i = 0; i < noRepeatSet.size(); i++) {
-			writeAnotherFile.write();
+			writeAnotherFile.write(noRepeatSet.);
 		}
 		
 	}

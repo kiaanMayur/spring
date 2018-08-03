@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestDivision" project="Test Assignment" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="co.in.capgemini.test.TestDivision" time="0.11">
-    <testcase name="testBothNegative" classname="co.in.capgemini.test.TestDivision" time="0.11"/>
-    <testcase name="testBothPositve" classname="co.in.capgemini.test.TestDivision" time="0.0"/>
-  </testsuite>
-</testrun>
